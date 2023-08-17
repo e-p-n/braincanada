@@ -15,6 +15,7 @@ sup {
     width: 550px;
     height: 475px !important;
     position: relative;
+    overflow: hidden;
 }
 
 .graph-holder p {
@@ -51,15 +52,38 @@ sup {
     transform: rotate(-29deg);
 }
 .graph {
-    width:318px;
-    right: 21px;
-    /* display: none; */
-
+    width: 318px;
+    left: -318px;
+    bottom: -318px;
 }
+.animation {
+    width: 318px;
+    animation: moveGraph 4s linear 1;
+    left: 211px;
+    bottom: 150px;
+    rotate: 0deg;
+}
+@keyframes moveGraph {
+    0% {
+        left: -318px;
+        bottom: -318px;
+        rotate: -240deg;
+    }
+    40% {
+        left: 211px;
+        bottom: 150px;
+        rotate: 0deg;
+    }
+    100% {
+        left: 211px;
+        bottom: 150px;
+        rotate: 0deg;
+    }
+}
+
 .graph img {
     width:100%;
     height: auto;
-    /* rotate: 359deg; */
 }
 .thumb {
     width: 59px;
@@ -84,11 +108,12 @@ sup {
 
 .num1 {
     top: 110px;
-    right: 45px
+    left: 375px;
 }
 
 .num2 {
     top: 120px;
+
 }
 
 .num3 {
@@ -101,7 +126,8 @@ sup {
     width: 73px;
     position: absolute;
     left: 130px;
-    top: 45px
+    top: 45px;
+
 }
 
 .line-2a {
@@ -109,7 +135,8 @@ sup {
     width: 22px;
     position: absolute;
     left: 160px;
-    top: 45px
+    top: 45px;
+
 }
 .line-2b {
     border-top:  1px solid var(--dark-text);
@@ -119,6 +146,7 @@ sup {
     position: absolute;
     left: 182px;
     top: -48px;
+
 }
 .line-3a {
     border-top:  1px solid var(--dark-text);
@@ -126,7 +154,9 @@ sup {
     width: 50px;
     position: absolute;
     left: 130px;
-    top: 45px
+    top: 45px;
+
+
 }
 .line-3b {
     border-bottom:  1px solid var(--dark-text);
@@ -136,13 +166,15 @@ sup {
     position: absolute;
     left: 179px;
     top: 46px;
+
 }
 .line-4a {
     border-top:  1px solid var(--dark-text);
     width: 20px;
     position: absolute;
     left: 160px;
-    top: 45px
+    top: 45px;
+
 }
 .line-4b {
     border-top:  1px solid var(--dark-text);
@@ -152,7 +184,32 @@ sup {
     position: absolute;
     left: 179px;
     top: -38px;
+
+
 }
+
+.stats {
+    opacity: 0;
+}
+.fadeIn {
+    animation: fadeIn 4s linear 1 !important;
+    opacity: 1.0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+
+    }
+    50% {
+        opacity: 0.0;
+
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
 
 @media only screen and (max-width:1368px) {
     .graph-holder {
@@ -181,16 +238,40 @@ sup {
 
     .graph {
         width:280px;
-        right: 21px;
-        top: 20px;
+        left: 181px;
+        bottom: 100px; 
         /* display: none; */
+       
+    }
+    @keyframes moveGraph {
+        0% {
+            left: -318px;
+            bottom: -318px;
+            rotate: -240deg
+        }
+        40% {
+            left: 181px;
+            bottom: 100px;
+            rotate: 0deg;
+        }
+        100% {
+            left: 181px;
+            bottom: 100px;
+            rotate: 0deg;
+        }
     }
     .thumb {
         width: 45px;
         right: 73px;
         bottom: 114px; 
     }
-
+    .title {
+        top: 0;
+    }
+    .num1 {
+        left: 325px;
+        top: 128px;
+    }
     .line-1 {
         width: 63px;
         left: 110px;

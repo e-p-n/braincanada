@@ -49,22 +49,21 @@ a:hover {
 .box, .intro .box {
     width: 1230px;
     height: 542px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 10px 0 0 20px;
     display: flex;
     background-image: url(../img/back.png);
     background-size: cover;
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
+    /* outline: 1px solid greenyellow; */
+    
 }
 
 header, .cream {
     background-color: var(--first);
 }
 
-header, footer {
-    padding: 0 100px;
-}
 
 footer, .cream {
     background-image: none;
@@ -389,6 +388,11 @@ header {
     padding-top: 0px !important;
 }
 
+header .box {
+    background-image: url(../img/back.png) !important;
+
+}
+
 header h1, header h2, .quote p{
     font-family: "prestige-elite-std", monospace;
     font-style: normal;
@@ -410,7 +414,6 @@ header h2  {
 header .box {
     display: flex;
     padding: 0;
-    margin: 0 auto;
     justify-content: space-between;
 }
 
