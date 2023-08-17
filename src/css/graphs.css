@@ -53,23 +53,23 @@ sup {
 }
 .graph {
     width: 318px;
-    left: -318px;
-    bottom: -318px;
+    left: -169px;
+    bottom: -169px;
 }
 .animation {
     width: 318px;
-    animation: moveGraph 4s linear 1;
+    animation: moveGraph 2s linear 1;
     left: 211px;
     bottom: 150px;
     rotate: 0deg;
 }
 @keyframes moveGraph {
     0% {
-        left: -318px;
-        bottom: -318px;
+        left: -169px;
+        bottom: -169px;
         rotate: -240deg;
     }
-    40% {
+    50% {
         left: 211px;
         bottom: 150px;
         rotate: 0deg;
@@ -201,7 +201,7 @@ sup {
         opacity: 0.0;
 
     }
-    50% {
+    25% {
         opacity: 0.0;
 
     }
