@@ -1,5 +1,6 @@
 @import "./fonts.css";
 @import "./carousel.css";
+@import "./graphs.css";
 
 :root {
     --first: hsl(28, 68%, 95%);
@@ -26,7 +27,7 @@ body {
     margin: 20px;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.3em;
 }
@@ -37,13 +38,22 @@ h2, h3 {
     line-height: normal;
 }
 
-.box , .intro .box {
+a {
+    color: var(--dark-text);
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.box, .intro .box {
     width: 1230px;
     height: 542px;
     margin: 0 auto;
     padding: 10px 0 0 20px;
     display: flex;
     background-image: url(../img/back.png);
+    background-size: cover;
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
 }
@@ -95,8 +105,9 @@ footer, .cream {
 
 .donors {
     padding-bottom: 50px;
+    margin-top: 20px;
 }
-.donors h3, .partners h3, .projects h3, .grants h3 {
+.donors h3, .projects h3, .grants h3 {
     font-size: 34px;
     text-transform: uppercase;
     font-weight: 700;
@@ -111,22 +122,31 @@ footer, .cream {
 
 .donors img {
     width:325px;
+    height: auto;
     margin: 75px auto 0;
 }
 
 
-/* EXEC */
+/* ----- EXEC ----- */
+.exec {
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
 
 .exec h3 {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
 } 
 
+.quote {
+    margin-top: 20px;
+}
+
 .more-less {
     background: none;
     padding: 0;
-    margin:0;
+    margin: 15px 0 0;
     border: none;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -158,6 +178,10 @@ footer, .cream {
     width: 100%;
 }
 
+.exec__name {
+    margin: 35px 0 50px !important;
+}
+
 .exec__quote {
     margin-top: 70px;
     display: flex;
@@ -175,7 +199,8 @@ footer, .cream {
 footer {
     height: auto !important;
     padding: 50px 100px;
-    margin-bottom: 20px;}
+    margin: 20px 0;
+}
 
 .health {
     width: 200px; 
@@ -257,8 +282,13 @@ footer  a {
 
 /* ----- GRANTS ----- */
 
+.grants {
+    margin-top: 20px;
+}
+
 .grants .box {
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .grants .left {
@@ -345,7 +375,7 @@ footer  a {
 
 .study__last {
     border-bottom: none !important;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .study__show {
@@ -357,10 +387,6 @@ footer  a {
 
 header {
     padding-top: 0px !important;
-}
-
-header .box {
-    padding-top: 0;
 }
 
 header h1, header h2, .quote p{
@@ -384,7 +410,7 @@ header h2  {
 header .box {
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     justify-content: space-between;
 }
 
@@ -412,7 +438,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     background-color: #fff;
-    padding: 5px 10px;
+    padding: 10px;
     margin: 0 30px 0 0;   
     height: 20px;
 }
@@ -421,6 +447,7 @@ nav ul li {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    padding: 0 10px;
 
 }
 nav ul li a {
@@ -429,10 +456,14 @@ nav ul li a {
     font-weight: 400;
 }
 
+nav ul li a:hover {
+    color: var(--second);
+    text-decoration: underline;
+}
+
 /* ----- INFO ----- */
 
 .info p {
-    font-weight: 300;
     margin-top: 0;
     padding-top: 0;
 }
@@ -452,10 +483,13 @@ nav ul li a {
 
 /* ----- INTRO ----- */
 
+
+
 .intro {
     display: flex;
     padding-bottom: 0;
     align-items: flex-end;
+    margin-top: 20px;
 }
 
 .intro .box {
@@ -464,23 +498,15 @@ nav ul li a {
 
 .intro img {
     width: 430px;
-    height: 473px;
+    height: auto;
+    margin-right: 110px;
+
 }
 .intro div {
     width: 55%;
     margin: 0 100px 110px 0;
 }
-.intro h2 {
-    font-size: 34px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.intro .footnote {
-    font-size: 14px;
-
-}
-
-.light h2, .light p {
+.intro h2, .intro p {
     font-family: 'Roboto', sans-serif;
     color: var(--light-headline);
     font-size: 34px;
@@ -491,26 +517,20 @@ nav ul li a {
     padding: 0;
 
 }
-.light h2 {
+.intro .footnote {
+    font-size: 14px;
+
+}
+
+.intro h2 {
     margin-top: 20px;
 }
-
-/* ----- PARTNERS ----- */
-
-.partners .left {
-    width: 550px;
-}
-
-.partners img {
-    width:300px;
-    margin: 75px auto 0;
-}
-
 
 /* ----- PROJECTS ----- */
 
 .projects {
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .projects .box {
@@ -518,30 +538,8 @@ nav ul li a {
     height: auto;
 }
 
-.graphs {
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.graphs .left, .graphs .right {
-    width: 50%;
-
-}
-.graphs h4 {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 34px;
-    margin: 0;
-    padding: 0;
-}
-
-.graphs img {
-    margin: 0;
-    padding: 0;
-    width: 80%;
-}
-
 .year {
-    width: 525px;
+    width: 625px;
     margin: 0 0 25px 0;
 }
 
@@ -605,13 +603,16 @@ nav ul li a {
 }
 
 .item p {
-    font-size: 20px;
     font-weight: 300;
     text-align: center;
     margin: 0 10px 5px;
 }
 
 /* ----- QUOTE ----- */
+
+.name {
+    font-weight: 400;
+}
 
 .quote {
     background-repeat: no-repeat;
@@ -620,8 +621,8 @@ nav ul li a {
     display: flex;
 }
 .quote p {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 700;
     padding: 0;
     margin: 0;
 }
@@ -682,3 +683,199 @@ nav ul li a {
 .quote .box .credit {
     margin-top: 30px;
 }
+
+@media only screen and (max-width:1368px) {
+    body {
+        margin: 15px;
+        font-size: 16px;
+    }
+    .box , .intro .box {
+        width: 1024px;
+        height: 451px;
+        overflow: hidden;
+        background-size: 1024px auto;
+    }
+    
+    .info h2, .projects h2, .grants h2{
+        font-size: 20px;
+        margin: 40px 0 25px;
+    }
+    
+    /* ----- DONORS ------ */
+    .donors {
+        margin-top: 15px;
+    }
+    .donors h3, .projects h3, .grants h3 {
+        font-size: 26px;
+    }
+    .donors h3 {
+        margin-right: 300px
+    } 
+    
+    .donors .left {
+        width: 490px;
+    }
+
+    .donors img {
+        width:255px;
+        height: auto;
+        margin: 75px auto 0;
+    }
+
+    /* ----- EXEC ----- */
+    .exec {
+        margin-top: 15px;
+    }
+
+    .exec h3 {
+        font-size: 16px;
+    } 
+
+    .more-less {
+        font-size: 16px;
+    }
+    .message {
+        overflow: hidden;
+        height: 440px;
+    }
+    .ceo-pic, .chair-pic {
+        height: 381px;
+        width: 480px;
+    }
+    .exec__quote .quotemark {
+        margin-right: 10px !important;
+        line-height: .75em !important;
+
+    }
+
+    /* ----- FOOTER ----- */
+
+    footer {
+        padding: 30px 100px;
+        margin: 15px 0;
+    }
+    footer .footer-box {
+        width: 1024px;
+    }
+
+    .footnote {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    footer .left {
+        width: 440px;    
+    }
+    footer .right {
+        width: 450px;
+    }
+
+    /* ----- GRANTS ----- */
+
+    .grants {
+        margin-top: 15px;
+    }
+
+    .grants .left {
+        width: 460px;
+    }
+
+    .grants .right {
+        width: 480px;
+    }
+
+    .grants img {
+        width: 140px;
+        margin: 0 30px 0 15px;
+    }
+    .grants h5 {
+        font-size: 20px;
+    }
+    .study {
+        height: 105px;
+        padding: 6px 0 10px;
+    }
+    .study h6 {
+        font-size: 16px;
+    }
+    .study__details {
+        padding: 2px;
+    }
+
+    /* ----- HEADER ----- */
+
+    header img {
+        width: 270px;
+    }
+
+    nav ul {
+
+        padding: 5px;
+
+    }
+
+    /* ----- INTRO ----- */
+
+    .intro {
+        margin-top: 15px;
+    }
+    .intro img {
+        width: 350px;
+        margin-right: 30px;
+    }
+    .intro h2, .intro p {
+        font-size: 28px;
+    }
+
+    .intro h2 {
+        margin-top: 20px;
+    }
+
+    .quote {
+        margin-top: 15px;
+    }
+
+
+    /* ----- PROJECTS ----- */
+
+    .projects {
+        margin-top: 15px;
+    }
+
+    .slider-wrapper {
+        overflow: visible;
+    }
+
+
+    .item {
+        width: 225px;
+    }
+
+
+
+    /* ----- QUOTE ----- */
+
+    .quote p {
+        font-size: 18px;
+    }
+
+    .quotemark, .quote .quotemark {
+        font-size: 140px;
+        line-height: 1.45em;
+
+    }
+
+    .quote .credit {
+        font-size: 16px;
+
+    }
+
+    .year {
+        width: 520px;
+    }
+
+
+
+
+}
+

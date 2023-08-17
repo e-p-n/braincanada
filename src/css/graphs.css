@@ -1,0 +1,237 @@
+sup {
+    font-size: 0.65em; 
+    vertical-align: baseline; 
+    position: relative; 
+    top: -0.19em;
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.graph-holder {
+    width: 550px;
+    height: 475px !important;
+    position: relative;
+}
+
+.graph-holder p {
+    font-size: 24px;
+}
+
+.graph-holder h4 {
+    font-family: "Chathura", sans-serif;
+    font-size: 86px;
+    line-height: 0;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.graph-holder h3 {
+    font-size: 34px;
+    font-family: "Gilroy", sans-serif;
+}
+
+.graph-holder div {
+    position: absolute;
+}
+
+
+.hand {
+    width: 105px;
+    right: 33px;
+    bottom: 8px;
+
+}
+.hand img {
+    width: 100%;
+    height: auto;
+    transform: rotate(-29deg);
+}
+.graph {
+    width:318px;
+    right: 21px;
+    /* display: none; */
+
+}
+.graph img {
+    width:100%;
+    height: auto;
+    /* rotate: 359deg; */
+}
+.thumb {
+    width: 59px;
+    right: 86px;
+    bottom: 153px;
+
+
+}
+.thumb img {
+    width: 100%;
+    height: auto;
+    transform:rotate(-29deg);
+}
+.note {
+    bottom: 4px;
+    
+}
+
+.title {
+    top: -43px;
+}
+
+.num1 {
+    top: 110px;
+    right: 45px
+}
+
+.num2 {
+    top: 120px;
+}
+
+.num3 {
+    top: 258px;
+}
+
+
+.line-1 {
+    border-top:  1px solid var(--dark-text);
+    width: 73px;
+    position: absolute;
+    left: 130px;
+    top: 45px
+}
+
+.line-2a {
+    border-top:  1px solid var(--dark-text);
+    width: 22px;
+    position: absolute;
+    left: 160px;
+    top: 45px
+}
+.line-2b {
+    border-top:  1px solid var(--dark-text);
+    border-left: 1px solid var(--dark-text);
+    width: 22px;
+    height: 93px;
+    position: absolute;
+    left: 182px;
+    top: -48px;
+}
+.line-3a {
+    border-top:  1px solid var(--dark-text);
+
+    width: 50px;
+    position: absolute;
+    left: 130px;
+    top: 45px
+}
+.line-3b {
+    border-bottom:  1px solid var(--dark-text);
+    border-left: 1px solid var(--dark-text);
+    width: 28px;
+    height: 38px;
+    position: absolute;
+    left: 179px;
+    top: 46px;
+}
+.line-4a {
+    border-top:  1px solid var(--dark-text);
+    width: 20px;
+    position: absolute;
+    left: 160px;
+    top: 45px
+}
+.line-4b {
+    border-top:  1px solid var(--dark-text);
+    border-left: 1px solid var(--dark-text);
+    width: 28px;
+    height: 83px;
+    position: absolute;
+    left: 179px;
+    top: -38px;
+}
+
+@media only screen and (max-width:1368px) {
+    .graph-holder {
+        width: 480px;
+        height: 415px !important;
+    }
+
+    .graph-holder p {
+        font-size: 20px;
+    }
+
+    .graph-holder h3 {
+        font-size: 28px;
+    }
+    .graph-holder h4 {
+        font-size: 74px;
+
+    }
+
+    .hand {
+        width: 80px;
+        right: 33px;
+        bottom: 8px;
+    
+    }
+
+    .graph {
+        width:280px;
+        right: 21px;
+        top: 20px;
+        /* display: none; */
+    }
+    .thumb {
+        width: 45px;
+        right: 73px;
+        bottom: 114px; 
+    }
+
+    .line-1 {
+        width: 63px;
+        left: 110px;
+    }
+    
+    .line-2a {
+        width: 22px;
+        left: 135px;
+        top: 42px
+    }
+    .line-2b {
+        width: 22px;
+        height: 96px;
+        left: 157px;
+        top: -54px;
+    }
+    .line-3a {
+        width: 40px;
+        position: absolute;
+        left: 110px;
+        top: 42px
+    }
+    .line-3b {
+        width: 28px;
+        left: 149px;
+        top: 42px;
+    }
+    .line-4a {
+        border-top:  1px solid var(--dark-text);
+        width: 15px;
+        position: absolute;
+        left: 135px;
+        top: 42px
+    }
+    .line-4b {
+        width: 28px;
+        height: 85px;
+        position: absolute;
+        left: 149px;
+        top: -44px;
+    }
+    
+
+}

@@ -119,6 +119,7 @@ function accordion(id) {
     // }
     var accElement = document.getElementById('study-' + id);
     var studyDets = accElement.childNodes[1];
+    console.log(accElement);
 
     if (accElement.className.indexOf("study__show") == -1) {
         accElement.className += " study__show";

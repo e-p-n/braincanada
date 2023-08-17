@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://use.typekit.net/pwr2eyl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Brain Canada Foundation</title>
 </head>
 <body>
     <header>     
         <div class="box cream">
             <div class="left">
-                <img class="logo" src="../src/img/brain_canada_logo.svg" alt="Brain Canada Foundation">
+                <a href="https://braincanada.ca"><img class="logo" src="../src/img/brain_canada_logo.svg" alt="Brain Canada Foundation"></a>
+                
 
                 <h1>Making the invisible visible.</h1>
                 <h2>2022&ndash;2023 Annual Report</h2>
@@ -22,13 +23,9 @@
             <div class="right">
                 <nav>
                     <ul>
-                        <li>
-                            English
-                        </li>
-                        &nbsp;|&nbsp;
-                        <li>
-                            <a href="../fr/">Français</a>
-                        </li>
+                        <li>English</li>
+                        |
+                        <li><a href="../fr/">Français</a></li>
                     </ul>
                 </nav>
                 <img src="../src/img/microscope.png" alt="" />
@@ -37,7 +34,7 @@
     </header>
     <div class="intro brown">
         <div class="box brown">
-            <div class="light">
+            <div class="left">
                 <h2>Our Vision</h2>
                 <p>Bold science for <br>
                 brain health</p>
@@ -163,11 +160,10 @@
                     <h3>The Power of Diverse Partnerships</h3>
                     <p>Brain Canada is the leading foundation dedicated to advancing neuroscience in this country. We drive tangible, actionable change through our unique and holistic approach which aims to understand all aspects of the brain in health and disease, as well as our funding initiatives which encourage interdisciplinarity and collaboration through more than 100 partnerships.</p>
                     <p>I extend my heartfelt gratitude to the stakeholders, researchers and donors who have contributed to Brain Canada’s success. We are working together to make a lasting impact in the field of neuroscience and provide better health outcomes for people in Canada &ndash; and around the world.</p>
-                    <p>Naomi Azrieli, OC, DPhil<br>
+                    <p class="exec__name"><span class="name">Naomi Azrieli</span>, OC, DPhil<br>
                     Brain Canada Chair</p>
                 </div>
-                <button class="more-less" id="chair-button" onclick="showHide('chair')">more</span></button></p>
-                </p>
+                <p><button class="more-less" id="chair-button" onclick="showHide('chair')">more</span></button></p>
             </div>
             <div id="chair-pic" class="chair-pic">
                 <img class="exec-pic" src="../src/img/chair.jpg" alt="">
@@ -203,10 +199,10 @@
                     <p>We launched 24 programs this year, including two new programs to support Black and Indigenous scholars. Through these programs, Brain Canada and its partners are funding transformative research projects that address the evolving needs of the brain research community and ensure that researchers have the tools and resources they need to advance their work.</p>
                         
                         
-                    <p>Viviane Poupon, PhD <br>
+                    <p class="exec__name"><span class="name">Viviane Poupon</span>, PhD <br>
                         Brain Canada President & CEO</p>
                 </div>
-                <button class="more-less" id="ceo-button" onclick="showHide('ceo')">more</span></button></p>
+                <button class="more-less" id="ceo-button" onclick="showHide('ceo')">more</span></button>
             </div>
             <div id="ceo-pic" class="ceo-pic">
                 <img class="exec-pic" src="../src/img/ceo.jpg" alt="">
@@ -227,14 +223,14 @@
                 <p class="quotemark">“</p>
                 <div>
                     <p>Investing in projects like these will lead to concrete impacts on  brain health in Canada.</p>
-                    <p class="credit">The Honourable Jean-Yves Duclos <br>
+                    <p class="credit"><span class="name">The Honourable Jean-Yves Duclos</span><br>
                     Minister of Health</p>
                 </div>
     
             </div>
         </div>
     </div>
-    <div class="cream grants">
+    <div class="cream grants" id="grants">
         <div class="box">
             <div class="left">
                 <h2>Types of grants</h2>
@@ -344,6 +340,7 @@
                         <p>With an additional $1.5 million in funding through the competitive Joint Canada-Israel Health Research Program, Dr. Prager-Khoutorsky is building on her Brain Canada-funded work to explore yet another factor that influences the ability of tanycytes to communicate between the body and the brain &ndash; neuroinflammation caused by bacterial infections. This new project builds on an existing collaboration with Dr. Ruud Buijs based at Universidad Nacional Autónoma de México and includes a new collaborator in Dr. Yoav Livneh from the Weizmann Institute of Science in Israel.</p>
 
 
+
                         <div class="study__impact">
                             <h6>What’s the Impact?</h6>
                             <ul>
@@ -352,10 +349,11 @@
                                 <li>$1.5M in additional funding</li>
                             </ul>
                         </div>
+                        <p><a href="#grants" onclick="accordion('1')">close</a></p>
                     </div>
                 </div>
-                <div class="study" onclick="accordion('2')" id="study-2">
-                    <button class="study__details">
+                <div class="study" id="study-2">
+                    <button  onclick="accordion('2')" class="study__details">
                         <img src="../src/img/cs-2.png" alt="">
                         <span>
                             <h4>Capacity Building Grants</h4>
@@ -386,10 +384,12 @@
                                 <li>$1.6M new funding for clinical trial</li>
                             </ul>
                         </div>
+                        <p><a href="#grants" onclick="accordion('2')">close</a></p>
+
                     </div>
                 </div>
-                <div class="study" onclick="accordion('3')" id="study-3">
-                    <button class="study__details">
+                <div class="study" id="study-3">
+                    <button onclick="accordion('3')" class="study__details">
                         <img src="../src/img/cs-3.png" alt="">
                         <span>
                             <h4>Team Grants</h4>
@@ -433,10 +433,12 @@
                                 <li>Team patents new detection approach</li>
                             </ul>
                         </div>
+                        <p><a href="#grants" onclick="accordion('3')">close</a></p>
+
                     </div>
                 </div>
-                <div class="study" onclick="accordion('4')" id="study-4">
-                    <button class="study__details">
+                <div class="study" id="study-4">
+                    <button onclick="accordion('4')" class="study__details">
                         <img src="../src/img/cs-4.png" alt="">
                         <span>
                             <h4>Team Grants</h4>
@@ -473,11 +475,12 @@
                                 <li>National recognition</li>
                             </ul>
                         </div>
-                        
+                        <p><a href="#grants" onclick="accordion('4')">close</a></p>
+
                     </div>
                 </div>
-                <div class="study" onclick="accordion('5')" id="study-5">
-                    <button class="study__details">
+                <div class="study" id="study-5">
+                    <button onclick="accordion('5')" class="study__details">
                         <img src="../src/img/cs-5.png" alt="">
                         <span>
                             <h4>Team Grants</h4>
@@ -520,11 +523,13 @@
                                 <li>Additional $12.5M in funding</li>
                             </ul>
                         </div>
+                        <p><a href="#grants" onclick="accordion('5')">close</a></p>
+
                         
                     </div>
                 </div>
-                <div class="study study__last" onclick="accordion('6')" id="study-6">
-                    <button class="study__details">
+                <div class="study study__last" id="study-6">
+                    <button onclick="accordion('6')" class="study__details">
                         <img src="../src/img/cs-6.png" alt="">
                         <span>
                             <h4>Team Grants</h4>
@@ -554,6 +559,8 @@
                                 <li>Providing training opportunities to 18 students</li>
                             </ul>
                         </div>
+                        <p><a href="#grants" onclick="accordion('6')">close</a></p>
+
                     </div>
 
                 </div>
@@ -569,7 +576,7 @@
                 <p class="quotemark">“</p>
                 <div>
                     <p>Brain Canada’s ability to pool resources and secure matching funds attracts individual and corporate donors. Looking across Canada, and internationally, the most important thing is for organizations to share knowledge and work together for the common good. That’s what we are doing with Brain Canada.</p>
-                    <p class="credit">Janis Levine <br />
+                    <p class="credit"><span class="name">Janis Levine</span> <br />
                         President & Executive Officer, <br>
                         The Henry & Berenice Kaufmann Foundation</p>
                 </div>
@@ -598,7 +605,7 @@
                         brain research, we can support <br>
                         life-changing breakthroughs <br>
                         and save lives.</p>
-                    <p class="credit">Eric Pilon-Bignell<br>
+                    <p class="credit"><span class="name">Eric Pilon-Bignell</span><br>
                         Founder of Project7<br>
                         Eric is climbing seven of the world’s highest mountains <br>
                         in support of Brain Canada.</p>    
@@ -612,19 +619,62 @@
                 <h2>Financial Snapshot</h2>
                 <h3>A Clear Financial <br>
                     Outlook</h3>
-                <p>Brain Canada has shifted its fiscal year from January 1 - December 31 to start April 1 and run through March 31, resulting in the current annual report covering a unique 15-month period that encompasses two fiscal years. This adjustment aligns the organization’s financial reporting with its revised fiscal timeline.</p>
+                <p>Brain Canada has shifted its fiscal year from January 1&nbsp;&ndash; December 31 to start April 1 and run through March 31, resulting in the current annual report covering a unique 15-month period that encompasses two fiscal years. This adjustment aligns the organization’s financial reporting with its revised fiscal timeline.</p>
 
                 <p><a href="#">Download the PDF</a> to view our financial statements </p>
     
             </div>
             <div class="graphs">
-                <div class="left">
-                    <h4>2022</h4>
-                    <img src="../src/img/2022.png" alt="">
+                <div class="graph-holder">
+                    <div class="hand"><img src="../src/img/hand.png" alt=""></div>
+                    <div class="graph"><img src="../src/img/2022.svg" alt=""></div>
+                    <div class="thumb"><img src="../src/img/thumb.png" alt=""></div>
+                    <div class="title"><h3>2022</h3></div>
+                    <div class="num1">
+                        <h4>92<sup>%</sup></h4>
+                        <p>Researchers<br>
+                        Programs</p>
+                    </div>        
+                    <div class="num2">
+                        <h4>5<sup>%</sup></h4>
+                        <p>Fundraising</p>
+                        <div class="line-1"></div>
+            
+                    </div>
+                    <div class="num3">
+                        <h4>3<sup>%</sup></h4>
+                        <p>Administration</p>
+                        <div class="line-2a"></div>
+                        <div class="line-2b"></div>
+                    </div>
+                    <!-- <img class="trace" src="../src/img/2022.png" alt=""> -->
+            
                 </div>
-                <div class="right">
-                    <h4>2023*</h4>
-                    <img src="../src/img/2023.png" alt="">
+                <div class="graph-holder">
+                    <div class="hand"><img src="../src/img/hand.png" alt=""></div>
+                    <div class="graph"><img src="../src/img/2023.svg" alt=""></div>
+                    <div class="thumb"><img src="../src/img/thumb.png" alt=""></div>
+                    <div class="title"><h3>2023*</h3></div>
+                    <div class="num1">
+                        <h4>97<sup>%</sup></h4>
+                        <p>Researchers<br>
+                        Programs</p>
+                    </div>        
+                    <div class="num2">
+                        <h4>2<sup>%</sup></h4>
+                        <p>Fundraising</p>
+                        <div class="line-3a"></div>
+                        <div class="line-3b"></div>
+                    </div>
+                    <div class="num3">
+                        <h4>1<sup>%</sup></h4>
+                        <p>Administration</p>
+                        <div class="line-4a"></div>
+                        <div class="line-4b"></div>
+                    </div>
+                    <!-- <img class="trace" src="../src/img/2022.png" alt=""> -->
+                    <div class="note">* these % are for a 3-month period</div>
+            
                 </div>
             </div>
         </div>
