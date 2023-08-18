@@ -329,13 +329,15 @@ footer  a {
 }
 
 .study p {
-    margin-top: 0;
+    margin-top: 7px;
     padding-top: 0;
 }
 
 .study__quote {
     color: #2FABE1;
     font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .study__impact {
     background-color: white;
