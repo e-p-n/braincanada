@@ -313,12 +313,17 @@ footer  a {
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .study {
     padding: 12px 0;
     border-bottom: 1px solid var(--second);
     overflow: hidden; 
     height: 138px;
+}
+
+.study h5 {
+    text-transform: none !important;
 }
 
 .study h6 {
