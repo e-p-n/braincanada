@@ -88,18 +88,24 @@ dotsNav.addEventListener('click', e => {
 
 window.addEventListener("resize", resetSlideWidthAndPos(slideWidth, slides));
 
-function showHide(id) {
+function showHide(id, lang) {
+    var more = "more";
+    var less = "less";
+    if (lang === "fr") {
+        more = "plus";
+        less = "moins";
+    }
     message = document.getElementById(id);
     button = document.getElementById(id+'-button');
     pic = document.getElementById(id+'-pic');
     if (message.className.indexOf("exec__show") == -1) {
         message.className += " exec__show"
         pic.className += " exec__show"
-        button.innerHTML = 'less';
+        button.innerHTML = less;
     } else {
         message.className = message.className.replace(" exec__show", "");
         pic.className = pic.className.replace(" exec__show", "");
-        button.innerHTML = 'more';
+        button.innerHTML = more;
 
     }
 }

@@ -46,6 +46,13 @@ a:hover {
     text-decoration: none;
 }
 
+sup {
+    font-size: 0.75em; 
+    vertical-align: baseline; 
+    position: relative; 
+    top: -0.39em;
+}
+
 .box, .intro .box {
     width: 1230px;
     height: 542px;
@@ -190,6 +197,11 @@ footer, .cream {
 .exec__quote .quotemark {
     margin-right: 25px !important;
     line-height: .8em !important;
+}
+
+.exec__quote .quotemark_fr {
+    margin-right: 25px !important;
+    line-height: .44em !important;
 }
 
 
@@ -563,6 +575,13 @@ nav ul li a:hover {
     margin: 0 0 25px 0;
 }
 
+sup {
+    font-size: 0.75em; 
+    vertical-align: baseline; 
+    position: relative; 
+    top: -0.39em;
+}
+
 /* ----- PROJECTS - CAROUSEL ----- */
 
 .slider-wrapper {
@@ -652,7 +671,7 @@ nav ul li a:hover {
     font-size: 20px;
     margin-top: 5px;
 }
-.quotemark, .quote .quotemark {
+.quote .quotemark, .quote .quotemark_fr {
     font-family: "archivo-black", sans-serif;
     font-style: normal;
     font-weight: 400;
