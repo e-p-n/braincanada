@@ -680,6 +680,10 @@ sup {
     padding: 0;
     margin: 0;
 }
+
+.quote .quotemark_fr {
+    line-height: 1em;
+}
 .quote img {
     margin: auto;
 }

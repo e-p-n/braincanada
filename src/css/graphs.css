@@ -1,8 +1,8 @@
 sup {
-    font-size: 0.65em; 
+    font-size: 0.65em !important; 
     vertical-align: baseline; 
     position: relative; 
-    top: -0.19em;
+    top: -0.19em !important;
 }
 
 .graphs {
@@ -122,12 +122,19 @@ sup {
 
 
 .line-1 {
-    border-top:  1px solid var(--dark-text);
+    border-top: 1px solid var(--dark-text);
     width: 73px;
     position: absolute;
     left: 130px;
     top: 45px;
+}
 
+.line-1-fr {
+    border-top: 1px solid var(--dark-text);
+    width: 98px;
+    position: absolute;
+    left: 103px;
+    top: 45px;
 }
 
 .line-2a {
@@ -139,7 +146,7 @@ sup {
 
 }
 .line-2b {
-    border-top:  1px solid var(--dark-text);
+    border-top: 1px solid var(--dark-text);
     border-left: 1px solid var(--dark-text);
     width: 22px;
     height: 93px;
@@ -149,14 +156,18 @@ sup {
 
 }
 .line-3a {
-    border-top:  1px solid var(--dark-text);
-
+    border-top: 1px solid var(--dark-text);
     width: 50px;
     position: absolute;
     left: 130px;
     top: 45px;
-
-
+}
+.line-3a-fr {
+    border-top: 1px solid var(--dark-text);
+    width: 77px;
+    position: absolute;
+    left: 103px;
+    top: 45px;
 }
 .line-3b {
     border-bottom:  1px solid var(--dark-text);

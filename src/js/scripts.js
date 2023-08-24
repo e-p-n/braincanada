@@ -92,8 +92,8 @@ function showHide(id, lang) {
     var more = "more";
     var less = "less";
     if (lang === "fr") {
-        more = "plus";
-        less = "moins";
+        more = "Plus";
+        less = "Moins";
     }
     message = document.getElementById(id);
     button = document.getElementById(id+'-button');
