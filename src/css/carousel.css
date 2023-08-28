@@ -77,9 +77,8 @@
     z-index: 100;
 }
 
-.carousel__nav {
+/* .carousel__nav {
     display: flex;
-    display: none;
     justify-content: center;
     padding: 0;
     transform: translateY(-250%);
@@ -106,7 +105,7 @@
 .carousel__indicator.current-slide:hover  {
     outline: none;
     cursor: default;
-}
+} */
 
 .is-hidden {
     display: none;
@@ -129,4 +128,12 @@
         font-size: 16px !important;
     }
 
+}
+
+@media only screen and (max-width:1077px) {
+
+
+    .carousel__image {
+        margin: 0 110px !important;
+    }
 }

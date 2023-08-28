@@ -1,16 +1,17 @@
+// **** Carousel ****
+
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
-const dotsNav = document.querySelector('.carousel__nav');
-const dots = Array.from(dotsNav.children);
+// const dotsNav = document.querySelector('.carousel__nav');
+// const dots = Array.from(dotsNav.children);
 
 let slideWidth = slides[0].getBoundingClientRect().width;
 
 const resetSlideWidthAndPos = (slideWidth, slides) => {
     slideWidth = slides[0].getBoundingClientRect().width;
     slides.forEach(setSlidePosition);
-    console.log("done");
 }
 
 
@@ -18,10 +19,10 @@ const setSlidePosition = (slide, index ) => {
     slide.style.left = slideWidth * index + 'px';
 }
 
-const updateDots = (currentDot, targetDot) => {
-    targetDot.classList.add('current-slide');
-    currentDot.classList.remove('current-slide');
-}
+// const updateDots = (currentDot, targetDot) => {
+//     targetDot.classList.add('current-slide');
+//     currentDot.classList.remove('current-slide');
+// }
 
 slides.forEach(setSlidePosition);
 
@@ -48,12 +49,12 @@ const hideShowArrows = (targetIndex, prevButton, nextButton, slides) => {
 
 
 prevButton.addEventListener('click', e => {
-    const currentSlide =track.querySelector('.current-slide');
+    const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     moveToSlide(track, currentSlide, prevSlide);
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const prevDot = currentDot.previousElementSibling;
-    updateDots(currentDot, prevDot);
+    // const currentDot = dotsNav.querySelector('.current-slide');
+    // const prevDot = currentDot.previousElementSibling;
+    // updateDots(currentDot, prevDot);
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
     hideShowArrows(prevIndex, prevButton, nextButton, slides);
 
@@ -63,30 +64,32 @@ nextButton.addEventListener('click', e => {
     const currentSlide =track.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling; 
     moveToSlide(track, currentSlide, nextSlide);  
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling;
-    updateDots(currentDot, nextDot);
+    // const currentDot = dotsNav.querySelector('.current-slide');
+    // const nextDot = currentDot.nextElementSibling;
+    // updateDots(currentDot, nextDot);
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
     hideShowArrows(nextIndex, prevButton, nextButton, slides);
 })
 
 
-dotsNav.addEventListener('click', e => {
-    //what indicator was clicked on
-    const targetDot = e.target.closest('button');
-    const currentDot = dotsNav.querySelector('.current-slide');
-    if(!targetDot || targetDot === currentDot) return;
-    const currentSlide = track.querySelector('.current-slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
+// dotsNav.addEventListener('click', e => {
+//     //what indicator was clicked on
+//     const targetDot = e.target.closest('button');
+//     const currentDot = dotsNav.querySelector('.current-slide');
+//     if(!targetDot || targetDot === currentDot) return;
+//     const currentSlide = track.querySelector('.current-slide');
+//     const targetIndex = dots.findIndex(dot => dot === targetDot);
+//     const targetSlide = slides[targetIndex];
 
-    moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot);
-    hideShowArrows(targetIndex, prevButton, nextButton, slides);
-})
+//     moveToSlide(track, currentSlide, targetSlide);
+//     updateDots(currentDot, targetDot);
+//     hideShowArrows(targetIndex, prevButton, nextButton, slides);
+// })
 
 
 window.addEventListener("resize", resetSlideWidthAndPos(slideWidth, slides));
+
+// **** Show / Hide text for Execs ****
 
 function showHide(id, lang) {
     var more = "more";
@@ -111,18 +114,8 @@ function showHide(id, lang) {
 }
 
 
-// Accordion 
+// **** Accordion ****
 function accordion(id) {
-
-    // for (let i=1; i++; i<=6) {
-    //     if (i != id) {
-    //         let study = document.getElementById('study-' + i);
-    //         console.log(study);
-    //         if (study.className.indexOf("study__show")) {
-    //             study.className = study.className.replace(" study__show", "");
-    //         }     
-    //     }
-    // }
     var accElement = document.getElementById('study-' + id);
     var studyDets = accElement.childNodes[1];
     console.log(accElement);
@@ -137,7 +130,7 @@ function accordion(id) {
 }
 
 
-//Load Graph animation on View
+// **** Load Graph animation on View ****
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
