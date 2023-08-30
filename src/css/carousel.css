@@ -56,8 +56,13 @@
     line-height: 1em;
     background: transparent;
     border: none;
-    color: grey;
-    font-family: 'Wingdings 3';
+    width: 40px;
+
+}
+
+.carousel__button img {
+    width: 100% !important;
+    margin: 0 !important;
 }
 .carousel__button:hover {
     color: black;
@@ -67,8 +72,12 @@
     left: 40px;
     transform: translateX(50%);
     transform: translateY(-210%);
-
     z-index: 100;
+}
+
+.carousel__button--left img {
+    transform: rotate(180deg);
+
 }
 .carousel__button--right {
     right: 40px;
