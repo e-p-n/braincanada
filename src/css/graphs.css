@@ -434,3 +434,23 @@ sup {
     
 
 }
+
+@media only screen and (max-width:872px) {
+    .graphs {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        flex-direction: column;
+    }
+
+    .num1 {
+        left: 290px
+    }
+
+    .graphs .graph-holder p {
+        font-size: 18px !important;
+    }
+
+
+}
