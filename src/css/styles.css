@@ -63,7 +63,6 @@ sup {
     background-size: cover;
     background-blend-mode: color-burn;
     background-repeat: no-repeat;
-    /* outline: 1px solid greenyellow; */
     
 }
 
@@ -584,6 +583,8 @@ sup {
 
 /* ----- PROJECTS - CAROUSEL ----- */
 
+
+
 .slider-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -594,8 +595,8 @@ sup {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    /* overflow: hidden; */
-    /* outline: 1px solid lightblue; */
+    overflow: visible;
+    
 }
   
 .items-holder {
@@ -608,6 +609,7 @@ sup {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     animation: moveSlideshow 60s linear infinite;
+
 }
 
 .items-holder:hover {
@@ -885,9 +887,9 @@ sup {
         margin-top: 15px;
     }
 
-    .slider-wrapper {
+    /* .slider-wrapper {
         overflow: visible;
-    }
+    } */
 
 
     .item {
@@ -1153,9 +1155,9 @@ sup {
     }
     
     .left, .right {
-        margin:  10px auto 0 !important;
-        width: 90% !important;
-        max-width: 400px !important;
+        margin:  10px 0 0 !important;
+        width: 325px !important;
+        /* max-width: 375px !important; */
     }
 
 
@@ -1244,16 +1246,16 @@ sup {
 
     .grants img {
         width: 100px;
-        margin: 0 30px 0 15px;
+        margin: 0 10px 0 15px;
     }
     .grants h4 {
         font-size: 10px;
     }
     .grants h5 {
-        font-size: 16px;
+        font-size: 15px;
     }
     .study {
-        height: 80px;
+        height: 75px;
         padding: 6px 0 10px;
     }
     .study h6 {
@@ -1271,11 +1273,24 @@ sup {
         width: 100%;
     }
 
+    header .box .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .box {
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
     header img {
         width: 170px;
-        margin: 0 auto 10px !important;
+        display: block;
+        margin: 0 auto 10px;
     }
 
 
@@ -1296,8 +1311,13 @@ sup {
 
     nav {
         position: absolute;
-        top: 15px;
-        right: 0;
+        top: 14px;
+        right: -18px;
+    }
+
+    .logo {
+        margin: 35px 0 0 !important;
+
     }
 
 
@@ -1339,7 +1359,7 @@ sup {
     /* ----- PROJECTS ----- */
 
     .projects .box {
-        overflow: auto;
+        overflow: hidden;
     }
 
     .slider-wrapper {
@@ -1358,7 +1378,15 @@ sup {
     .quote .box {
         flex-direction: column-reverse;
     }
+
+    .quotemark, .quotemark_fr {
+        font-size: 90px !important;
+    }
    
+    .quote .quotemark {
+        line-height: 1.9em;
+        margin-right: 10px;
+    }
 
     .quote img {
         margin: 20px 25px; 
