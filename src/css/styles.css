@@ -53,6 +53,14 @@ sup {
     top: -0.39em;
 }
 
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
 .box, .intro .box {
     width: 1230px;
     height: 542px;
@@ -939,6 +947,8 @@ sup {
         margin: 40px 0 25px;
     }
     
+
+
     /* ----- DONORS ------ */
 
     .donors h3 {
@@ -1139,11 +1149,23 @@ sup {
     }
 
 
-
-
 }
 
 @media only screen and (max-width:872px) {
+
+    body {
+        margin: 0;
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .desktop {
+        display: none;
+    }
+
+
     .box, .footer-box {
         flex-direction: column;
         align-items: center;
@@ -1184,11 +1206,34 @@ sup {
         width: 90%;
         max-width: 400px;
     }
+
+    .exec__name {
+        margin-bottom: 0 !important;
+    }
+
+    .exec-pic {
+        margin: 0 auto 30px;
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .exec__quote {
+        display: flex;
+        margin: 30px 0 !important;
+        width: 99% !important;
+        padding: 0
+    }
+
+    .exec__quote .quotemark,  .exec__quote .quotemark_fr {
+        width: 40px !important; 
+        font-size: 83px !important;
+        line-height: 0.8em !important;
+
+    }
+
     
     .ceo-pic, .chair-pic {
-        margin-top: 0;
-        padding-top: 5px;
-        height:auto
+        display: none;
     }
 
     .more-less {
@@ -1249,13 +1294,16 @@ sup {
         margin: 0 10px 0 15px;
     }
     .grants h4 {
-        font-size: 10px;
+        font-size: 18px;
+        color: var(--dark-text) !important;
     }
     .grants h5 {
-        font-size: 15px;
+        font-size: 22px;
+        color: var(--dark-text) !important;
+
     }
     .study {
-        height: 75px;
+        height: 250px;
         padding: 6px 0 10px;
     }
     .study h6 {
@@ -1263,6 +1311,13 @@ sup {
     }
     .study__details {
         padding: 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .study__details img {
+        width: 200px;
+        height: auto;
     }
 
     /* ----- HEADER ----- */
@@ -1285,37 +1340,35 @@ sup {
     }
 
 
-
     header img {
-        width: 150px;
+        width: 300px;
         display: block;
-        margin: 0 auto 20px;
+        margin: 0 auto 40px;
     }
 
 
     header h1 {
-        margin-left: 0;
-        font-size: 22px;
+        margin: 70px 0 0 0;
+        font-size: 26px;
         text-align: left;
-        margin-bottom: 0;
         padding-bottom: 0;
     }
 
     header h2 {
-        font-size: 18px;
+        font-size: 22px;
         text-align: left;
-        margin: 5px 0 10px;
+        margin: 5px 0 40px;
         padding: 0;
     }
 
     nav {
         position: absolute;
-        top: 14px;
+        top: 0;
         right: -18px;
     }
 
     .logo {
-        margin: 35px 0 0 !important;
+        margin: 55px 0 0 !important;
 
     }
 
@@ -1332,12 +1385,9 @@ sup {
         height: auto;
     }
 
- 
-    
-
     .intro img {
-        width: 175px;
-        margin: 10px auto 0;
+        width: 250px;
+        margin: 60px auto 0;
     }
     .intro h2, .intro p {
         font-size: 22px;
