@@ -1,11 +1,14 @@
 // **** Carousel ****
 
+
 const track = document.querySelector('.carousel__track');
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 // const dotsNav = document.querySelector('.carousel__nav');
 // const dots = Array.from(dotsNav.children);
+
+
 
 let slideWidth = slides[0].getBoundingClientRect().width;
 
@@ -43,7 +46,7 @@ const hideShowArrows = (targetIndex, prevButton, nextButton, slides) => {
     } else {
         prevButton.classList.remove('is-hidden');
         nextButton.classList.remove('is-hidden');  
-      
+        
     }
 }
 
@@ -88,6 +91,7 @@ nextButton.addEventListener('click', e => {
 
 
 window.addEventListener("resize", resetSlideWidthAndPos(slideWidth, slides));
+    
 
 // **** Show / Hide text for Execs ****
 

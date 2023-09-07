@@ -1228,7 +1228,10 @@ sup {
         width: 40px !important; 
         font-size: 83px !important;
         line-height: 0.8em !important;
+    }
 
+    .exec__quote .quotemark_fr {
+        line-height: 0.5em !important;
     }
 
     
@@ -1439,6 +1442,12 @@ sup {
     .quote .quotemark {
         line-height: 1.9em;
         margin-right: 10px;
+    }
+
+    .quote .quotemark_fr {
+        line-height: 1.6em;
+        margin-right: 11px;
+        
     }
 
     .quote img {
