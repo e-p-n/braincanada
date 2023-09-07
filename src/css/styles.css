@@ -1158,7 +1158,7 @@ sup {
     }
 
     .mobile {
-        display: block !important;
+        display: flex !important;
     }
     
     .desktop {
