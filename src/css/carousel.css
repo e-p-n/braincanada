@@ -80,10 +80,6 @@
 
 }
 
-.carousel__button--left img {
-    transform: rotate(180deg);
-
-}
 .carousel__button--right {
     right: 40px;
     transform: translateX(-50%);
@@ -91,6 +87,7 @@
     z-index: 100;
     background: url(../img/arrow.svg);
     background-repeat: no-repeat;
+    background-position: right;
 
 
 }
