@@ -1278,6 +1278,7 @@ sup {
 
     /* ----- GRANTS ----- */
 
+
     .grants {
         margin-top: 15px;
     }
@@ -1292,6 +1293,16 @@ sup {
         padding: 0 !important;
     }
 
+    .line {
+        border-top: solid white 15px;
+        width: 100%;
+        margin-bottom: 35px;
+        position: absolute;
+        left:0;
+        transform: translateY(-270%);
+
+    }
+
 
     .grants img {
         width: 100px;
@@ -1300,6 +1311,11 @@ sup {
     .grants h4 {
         font-size: 18px;
         color: var(--dark-text) !important;
+        margin-top: 50px !important;
+
+    }
+    .study__details h4 {
+        margin: 0 !important;
     }
     .grants h5 {
         font-size: 22px;
