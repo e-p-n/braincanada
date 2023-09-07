@@ -134,6 +134,10 @@
         height: 320px;
         margin: 0 auto 20px;
     }
+
+    .carousel__button {
+        outline: 1px solid red;
+    }
     
     .carousel__image {
         padding: 0;
