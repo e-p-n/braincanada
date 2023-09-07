@@ -133,8 +133,16 @@
     }
 
     .carousel__button {
-        width: 24px !important;
-        outline: 1px solid red;
+        width: 36px;
+        height: 36px
+    }
+
+    .carousel__button--left {
+        left: 10px;
+    }
+    
+    .carousel__button--right {
+        right: 10px;    
     }
     
     .carousel__image {
