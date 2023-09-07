@@ -226,6 +226,8 @@ h4 sup {
     .graph-holder {
         width: 480px;
         height: 415px !important;
+        margin-top: 0 !important; 
+        padding-top: 0;
     }
 
     .graph-holder p {
@@ -277,7 +279,7 @@ h4 sup {
         bottom: 114px; 
     }
     .title {
-        top: 0;
+        top: 45px !important;
     }
     .num1 {
         left: 325px;

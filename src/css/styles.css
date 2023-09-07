@@ -1305,9 +1305,7 @@ sup {
         position: absolute;
         left:0;
         transform: translateY(-270%);
-
     }
-
 
     .grants img {
         width: 100px;
@@ -1449,6 +1447,23 @@ sup {
 
     .projects .box {
         overflow: hidden;
+    }
+
+    .year {
+        padding-bottom: 0 !important;
+        margin-bottom: 0;
+    }
+
+    .year p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .link-text {
+        margin: 35px 25px 45px !important;
+        display: block !important;
+
+
     }
 
     .slider-wrapper {
