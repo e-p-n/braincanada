@@ -54,7 +54,7 @@ sup {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .desktop {
@@ -1158,7 +1158,7 @@ sup {
     }
 
     .mobile {
-        display: block;
+        display: block !important;
     }
     
     .desktop {

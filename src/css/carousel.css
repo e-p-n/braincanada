@@ -125,6 +125,10 @@
 
 @media only screen and (max-width:872px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .carousel {
         position: relative;
         width: 100%;
