@@ -1199,6 +1199,11 @@ sup {
         max-width: 400px;
     }
 
+    .donors img {
+        margin-top: 30px;
+    }
+
+
 
     /* ----- EXEC ----- */
 
@@ -1480,9 +1485,11 @@ sup {
 
     .quote img {
         margin: 20px 25px; 
-
         width: 250px !important;
-   
+    }
+
+    .quote .green img, .quote .blue img {
+        margin: 45px auto !important;
     }
     .quote .right {
         width: 80%;
