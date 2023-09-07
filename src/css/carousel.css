@@ -137,7 +137,7 @@
 
     .carousel__button {
         width: 24px;
-        outline: 1px;
+        outline: 1px solid red;
     }
     
     .carousel__image {
